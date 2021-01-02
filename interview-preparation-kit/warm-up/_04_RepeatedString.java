@@ -3,6 +3,7 @@ static long repeatedString(String s, long n) {
   int rest = (int) (n % s.length());
   
   long count = s.chars().filter(ch -> ch == 'a').count();
+  
   long restCount = s.substring(0, rest).chars()
                             .filter(ch -> ch == 'a')
                             .count();
